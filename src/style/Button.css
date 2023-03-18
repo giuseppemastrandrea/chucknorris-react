@@ -1,0 +1,23 @@
+.Button{
+    display: inline-block;
+    max-width: 500px;
+}
+
+.Button{
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.Button.disabled{
+    background-color: lightgrey;
+}
+
+.Button.light{
+    background-color: lightblue;
+}
+
+.Button.dark{
+    background-color: darkblue;
+    color: #fff;
+}

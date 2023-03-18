@@ -8,7 +8,6 @@ function Button({ content, variant, clbk }) {
       'Button', 'text-center', 'd-flex', // ....
       variant
     ]
-
     return classes.join(" ")
   }
 

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '/src/style/Button.css'
 
-function Dropdown({ variant, list }) {
+function Dropdown({ variant, list, clbk}) {
   /*
     [
       { id: 0, value: "my-value", label: "Quello che vede l'utente"},
@@ -21,9 +21,16 @@ function Dropdown({ variant, list }) {
     return classes.join(" ")
   }
 
+  function handleChange(e){
+    console.log(e.currentTarget.value)
+    if(clbk != undefined){
+      clbk(e.currentTarget.value)
+    }
+  }
+
   return (
     <div className={renderClasses()}>
-      <select>
+      <select onChange={handleChange}>
         <option>Scegli una opzione</option>
         {list.length > 0 &&  list.map((item) =>
             <option 

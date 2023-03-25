@@ -11,10 +11,6 @@ function App() {
 
 
   
-  let ar = ["animal","career","celebrity","dev","explicit","fashion","food","history","money","movie","music","political","religion","science","sport","travel"]
-
-  let ciccino = "TEST"
-
   function clickHandler(){
     setCount(count + 1)
   }
